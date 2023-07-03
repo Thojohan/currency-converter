@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>currency converter</title>
+  </head>
+  <body>
+    <div class="top-div">
+      <span class="page-title">currrency converter</span>
+    </div>
+    <div class="convert-container">
+        <div class="input-container flex-space">
+        <div class="amount input-exchange">
+            <span class="input-description">Amount</span><div class="input-field-container">
+                <div style="display:flex;vertical-align:middle;height:100%;overflow:hidden;"><span class="currency-prefix">£</span>
+            <input type="text" style="max-width:75%;margin-right:0px;height: 100%;" class="input-field input-style input-amount" value="1.00"></input></div></div>
+        </div>
+        <div class="from input-exchange">
+            <span class="input-description">From currrency</span>
+            <div class="input-field-container input-transform from-input">
+            <input type="text" class="input-field input-style"></input></div>
+            <div class="list-container"><div class="from-box currency-list"></div></div>
+        </div>
+        <div class="reverse-container"><button class="reverse-button input-style">&#8644;</button></div>
+        <div class="to input-exchange">
+            <span class="input-description">To currency</span><div class="input-field-container input-transform">
+            <input type="text" class="input-field input-style to-input"></input></div>
+            <div class="list-container"><div class="to-box currency-list"></div></div>
+        </div>
+    </div>
+    <div class="bottom-container">
+      <div class="result-container">
+      </div>
+      <select name="style" id="style" class="input-style">
+        <option value="standard">Standard</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+        <option value="silly">Silly</option>
+      </select>
+      <button class="convert-button input-style">Convert</button></div>
+</div>
+    <div class="chart-container flex-space">
+      <div class="chart-column from-chart">
+      <div class="convert-header from-header"></div>
+      <div class="convert-body from-body flex-space"></div>
+      </div>
+      <div class="chart-column to-chart">
+        <div class="convert-header to-header"></div>
+      <div class="convert-body to-body flex-space"></div>
+        </div>
+  </div>
+  </body>
+</html>
